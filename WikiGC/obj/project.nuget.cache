@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JK3ejJyB2TaYglS4IJ+RkSFszsHq18KWXWrtQ0HMP2XuQUGn3vTl1FQkUsTDJp/LKawSKDxWVa7Y9GQkP23T9w==",
+  "dgSpecHash": "J3thNIq/DYMQZYR8oz4cJ+jxZlVrM00ZjTuq9sKHXsgbp3DZtFYRZAXWCZQhDEpJX4LuP2beYRNdWEhLXwlXJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Casa\\source\\repos\\wiki2\\wikiCG-back-end\\WikiGC\\WikiGC.csproj",
+  "projectFilePath": "C:\\Users\\Casa\\source\\repos\\wikicg4\\WikiGC\\WikiGC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Casa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Casa\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
