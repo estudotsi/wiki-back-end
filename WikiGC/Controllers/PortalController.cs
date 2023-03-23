@@ -56,7 +56,7 @@ namespace WikiGC.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Portais>> Teste2(int id)
+        public async Task<ActionResult<Portais>> Teste3(int id)
         {
             
 
