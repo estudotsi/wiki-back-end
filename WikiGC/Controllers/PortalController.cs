@@ -54,13 +54,5 @@ namespace WikiGC.Controllers
             return NoContent();
 
         }
-
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<Portais>> Teste3(int id)
-        {
-            
-
-        }
-
     }
 }
