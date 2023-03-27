@@ -22,8 +22,8 @@ namespace WikiGC.Migrations
                     ServidorHomologacao = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     VersaoWordpressHomologacao = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Responsavel = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Ativo = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Atualizado = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    status = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    update = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

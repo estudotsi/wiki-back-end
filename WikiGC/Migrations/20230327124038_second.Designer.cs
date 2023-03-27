@@ -11,8 +11,8 @@ using WikiGC.Data;
 namespace WikiGC.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230326153136_first")]
-    partial class first
+    [Migration("20230327124038_second")]
+    partial class second
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -30,12 +30,6 @@ namespace WikiGC.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Ativo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Atualizado")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -60,6 +54,9 @@ namespace WikiGC.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VersaoWordpressProducao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("status")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

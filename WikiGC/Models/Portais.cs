@@ -17,8 +17,6 @@ namespace WikiGC.Models
         public string? ServidorHomologacao { get; set; }
         public string? VersaoWordpressHomologacao { get; set; }
         public string? Responsavel { get; set; }
-        public string? status { get; set; }
-        public string? update { get; set; }
-
+        public string? Status { get; set; }
     }
 }

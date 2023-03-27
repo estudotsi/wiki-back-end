@@ -11,8 +11,8 @@ using WikiGC.Data;
 namespace WikiGC.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230326160018_mudança propriedade")]
-    partial class mudançapropriedade
+    [Migration("20230327102341_first")]
+    partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

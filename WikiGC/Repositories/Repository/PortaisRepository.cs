@@ -70,6 +70,7 @@ namespace WikiGC.Repositories.Repository
             portalFind.ServidorHomologacao = portal.ServidorHomologacao;
             portalFind.VersaoWordpressHomologacao = portal.VersaoWordpressHomologacao;
             portalFind.Responsavel = portal.Responsavel;
+            portalFind.Status = portal.Status;
 
             _context.Portais.Update(portalFind);
             await _context.SaveChangesAsync();
