@@ -11,8 +11,8 @@ using WikiGC.Data;
 namespace WikiGC.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230317153250_nomeDaMigration")]
-    partial class nomeDaMigration
+    [Migration("20230326160018_mudança propriedade")]
+    partial class mudançapropriedade
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -36,31 +36,30 @@ namespace WikiGC.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Responsavel")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ServidorHomologacao")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ServidorProducao")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UrlHomologacao")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UrlProducao")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VersaoWordpressHomologacao")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VersaoWordpressProducao")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("status")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("update")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
