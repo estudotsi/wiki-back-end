@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections;
+using System.Data;
 using WikiGC.Models;
 using WikiGC.Repositories.Interface;
 
@@ -15,8 +17,9 @@ namespace WikiGC.Controllers
         {
             _portalRepository = portalRepository;
         }
-
+     
         [HttpGet]
+        //[Authorize(Roles = "admin")]
         public async Task<ActionResult<List<Portais>>> ListarPortais()
         {
            List<Portais> portais = await _portalRepository.GetPortais();
