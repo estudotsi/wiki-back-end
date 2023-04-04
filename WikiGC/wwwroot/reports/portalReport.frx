@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="04/04/2023 09:51:53" ReportInfo.Modified="04/04/2023 10:08:49" ReportInfo.CreatorVersion="2023.2.0.0">
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqM7gJFg/iaLrqMhRfGy5lGu5+bJ3nL1whb7uPfJ9/z0l189OY62seL/8K3w7jRsRmeZ66Cp0XKFywRtGUu7k2gUNDLXd2BSLtuTrMmB2oMcFkygSxC2l7kjXFuWAC+Zo/Pnb6WlnUDlXE2JSt6io1VgZ7HE+LNozOqTBmDRMfxm+de5/P8/TxHixo0xiI6hm9UL/BuuYs5LuyymuCtijOYg==">
+      <TableDataSource Name="Portais" DataType="System.Int32" Enabled="true" TableName="Portais">
+        <Column Name="Id" Enabled="false" DataType="System.Int32"/>
+        <Column Name="Nome" DataType="System.String"/>
+        <Column Name="UrlProducao" Enabled="false" DataType="System.String"/>
+        <Column Name="ServidorProducao" DataType="System.String"/>
+        <Column Name="VersaoWordpressProducao" Enabled="false" DataType="System.String"/>
+        <Column Name="UrlHomologacao" Enabled="false" DataType="System.String"/>
+        <Column Name="ServidorHomologacao" Enabled="false" DataType="System.String"/>
+        <Column Name="VersaoWordpressHomologacao" Enabled="false" DataType="System.String"/>
+        <Column Name="Responsavel" DataType="System.String"/>
+        <Column Name="Status" Enabled="false" DataType="System.String"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8" Fill.Color="RosyBrown">
+      <TextObject Name="Text1" Left="236.25" Top="9.45" Width="217.35" Height="18.9" Text="Lista de Portais" HorzAlign="Center" Font="Arial Black, 12pt"/>
+      <TextObject Name="Text2" Top="9.45" Width="94.5" Height="18.9" Text="[Date]" HorzAlign="Center" Font="Arial Black, 9pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35" Fill.Color="Silver">
+      <TextObject Name="Text5" Left="18.9" Width="94.5" Height="18.9" Text="Nome" Font="Arial Black, 8pt"/>
+      <TextObject Name="Text7" Left="274.05" Width="170.1" Height="18.9" Text="ServidorProducao" HorzAlign="Right" Font="Arial Black, 8pt"/>
+      <TextObject Name="Text9" Left="557.55" Width="94.5" Height="18.9" Text="Responsavel" HorzAlign="Right" Font="Arial Black, 8pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="75.6" DataSource="Portais">
+      <TextObject Name="Text4" Top="18.9" Width="189" Height="18.9" Text="[Portais.Nome]" Font="Arial Black, 8pt"/>
+      <TextObject Name="Text6" Left="274.05" Top="9.45" Width="141.75" Height="18.9" Text="[Portais.ServidorProducao]" HorzAlign="Right" Font="Arial Black, 8pt"/>
+      <TextObject Name="Text8" Left="510.3" Top="9.45" Width="198.45" Height="18.9" Text="[Portais.Responsavel]" HorzAlign="Right" Font="Arial Black, 8pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="153.75" Width="718.2" Height="18.9">
+      <TextObject Name="Text3" Left="633.15" Width="94.5" Height="18.9" Text="[PageN]" HorzAlign="Center" Font="Arial Black, 8pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

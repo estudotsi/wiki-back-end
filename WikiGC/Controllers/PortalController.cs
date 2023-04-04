@@ -19,7 +19,7 @@ namespace WikiGC.Controllers
         }
      
         [HttpGet]
-        //[Authorize(Roles = "admin")]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult<List<Portais>>> ListarPortais()
         {
            List<Portais> portais = await _portalRepository.GetPortais();
