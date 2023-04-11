@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "UEw4YGS+QkYlgKNKjxT3ndZTkYjORWLf/oCPNd/nWL8=",
+  "Source": "WikiGC",
+  "BasePath": "_content/WikiGC",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WikiGC\\wwwroot",
+      "Source": "WikiGC",
+      "ContentRoot": "C:\\Users\\rogerio.campos\\source\\repos\\Wiki\\wi-back-endFR\\wiki-back-end\\WikiGC\\wwwroot\\",
+      "BasePath": "_content/WikiGC",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\rogerio.campos\\source\\repos\\Wiki\\wi-back-endFR\\wiki-back-end\\WikiGC\\wwwroot\\reports\\portalReport.frx",
+      "SourceId": "WikiGC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rogerio.campos\\source\\repos\\Wiki\\wi-back-endFR\\wiki-back-end\\WikiGC\\wwwroot\\",
+      "BasePath": "_content/WikiGC",
+      "RelativePath": "reports/portalReport.frx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\reports\\portalReport.frx"
+    }
+  ]
+}

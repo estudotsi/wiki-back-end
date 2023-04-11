@@ -1,3 +1,4 @@
+using FastReport.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -37,6 +38,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+FastReport.Utils.RegisteredObjects.AddConnection(typeof(MsSqlDataConnection));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -53,10 +56,12 @@ app.UseCors(x => x
     .AllowCredentials());
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
 
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseFastReport();
 app.MapControllers();
 
 app.Run();

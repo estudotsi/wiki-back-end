@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\rogerio.campos\\source\\repos\\Wiki\\wi-back-endFR\\wiki-back-end\\WikiGC\\wwwroot\\reports\\portalReport.frx",
+      "PackagePath": "staticwebassets\\reports\\portalReport.frx"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.WikiGC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.WikiGC.props",
+      "PackagePath": "build\\WikiGC.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WikiGC.props",
+      "PackagePath": "buildMultiTargeting\\WikiGC.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.WikiGC.props",
+      "PackagePath": "buildTransitive\\WikiGC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

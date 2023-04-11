@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FastReport.Export.PdfSimple;
+using FastReport.Web;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Data;
@@ -41,7 +43,7 @@ namespace WikiGC.Controllers
             }
         }
 
-       /* [Route("report")]
+        [Route("report")]
         [HttpGet]
         [ProducesResponseType(typeof(List<Portais>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -58,7 +60,7 @@ namespace WikiGC.Controllers
                 var webReport = new WebReport();
 
                 webReport.Report.Load(Path.Combine(_webHostEnvironment.ContentRootPath,
-                    "wwwroot/reports", "productsreport.frx"));
+                    "wwwroot/reports", "portalreport.frx"));
 
                 GenerateDataTableReport(portaisPdf, webReport);
 
@@ -71,7 +73,7 @@ namespace WikiGC.Controllers
                 stream.Flush();
                 byte[] arrayReport = stream.ToArray();
 
-                return File(arrayReport, "application/zip", "ProductsReport.pdf");
+                return File(arrayReport, "application/pdf", "PortalReport.pdf");
             }
             catch (Exception)
             {
@@ -80,20 +82,20 @@ namespace WikiGC.Controllers
             }
         }
 
-        private void GenerateDataTableReport(List<Portais> products, WebReport webReport)
+        private void GenerateDataTableReport(List<Portais> portais, WebReport webReport)
         {
             var portaisDataTable = new DataTable();
-            portaisDataTable.Columns.Add("ProductName", typeof(string));
-            portaisDataTable.Columns.Add("UnitsInStock", typeof(int));
-            portaisDataTable.Columns.Add("UnitPrice", typeof(decimal));
+            portaisDataTable.Columns.Add("Nome", typeof(string));
+            portaisDataTable.Columns.Add("ServidorProducao", typeof(string));
+            portaisDataTable.Columns.Add("Responsavel", typeof(string));
 
-            foreach (var item in products)
+            foreach (var item in portais)
             {
                 portaisDataTable.Rows.Add(item.Nome,
                                item.UrlProducao, item.Responsavel);
             }
             //registra o datatable para usar no relatorio
-            webReport.Report.RegisterData(portaisDataTable, "Products");
-        }*/
+            webReport.Report.RegisterData(portaisDataTable, "Portais");
+        }
     }
 }
