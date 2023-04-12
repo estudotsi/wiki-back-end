@@ -19,7 +19,7 @@ namespace WikiGC.Controllers
         }
      
         [HttpGet]
-        [Authorize(Roles = "admin")]
+        //[Authorize(Roles = "admin")]
         public async Task<ActionResult<List<Portais>>> ListarPortais()
         {
            List<Portais> portais = await _portalRepository.GetPortais();
@@ -36,6 +36,7 @@ namespace WikiGC.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult<Portais>> Cadastrar([FromBody] Portais portal)
         {
             Portais portalAdicionado =  await _portalRepository.AddPortal(portal);
@@ -43,6 +44,7 @@ namespace WikiGC.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult<Portais>> Atualizar([FromBody] Portais portal, int id)
         {
             portal.Id = id;
@@ -51,7 +53,8 @@ namespace WikiGC.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Portais>> AtuDeletaralizar(int id)
+        [Authorize(Roles = "admin")]
+        public async Task<ActionResult<Portais>> Deletar(int id)
         {
             await _portalRepository.DeletePortal(id);
             return NoContent();

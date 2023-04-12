@@ -6,6 +6,7 @@ using System.Text;
 using WikiGC.Data;
 using WikiGC.Repositories.Interface;
 using WikiGC.Repositories.Repository;
+using Wkhtmltopdf.NetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +35,7 @@ builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer(connectionString)
 builder.Services.AddTransient<IPortaisRepository, PortaisRepository>();
 
 builder.Services.AddControllers();
+builder.Services.AddWkhtmltopdf("wkhtmltopdf");
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

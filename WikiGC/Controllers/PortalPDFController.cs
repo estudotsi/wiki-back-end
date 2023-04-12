@@ -6,6 +6,7 @@ using System;
 using System.Data;
 using WikiGC.Data;
 using WikiGC.Models;
+using Wkhtmltopdf.NetCore;
 
 namespace WikiGC.Controllers
 {
@@ -14,11 +15,13 @@ namespace WikiGC.Controllers
     {
         private readonly DataContext _context;
         private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IGeneratePdf _generatePdf;
 
-        public PortalPDFController(DataContext context, IWebHostEnvironment webHostEnvironment)
+        public PortalPDFController(DataContext context, IWebHostEnvironment webHostEnvironment, IGeneratePdf generatePdf)
         {
             _context = context;
             _webHostEnvironment = webHostEnvironment;
+            _generatePdf = generatePdf; 
         }
 
         [HttpGet]
@@ -97,5 +100,26 @@ namespace WikiGC.Controllers
             //registra o datatable para usar no relatorio
             webReport.Report.RegisterData(portaisDataTable, "Portais");
         }
+
+        [HttpPost]
+        [Route("portalPdfInfo")]
+        public async Task<ActionResult> GetPortalInfo([FromBody] Portais portal)
+        {
+            var portalDetalhe = new PortalPdf
+            {
+               Nome = portal.Nome,
+               UrlProducao = portal.UrlProducao,
+               ServidorProducao = portal.ServidorProducao,
+               VersaoWordpressProducao = portal.VersaoWordpressProducao,
+               UrlHomologacao = portal.UrlHomologacao,
+               ServidorHomologacao = portal.ServidorHomologacao,
+               VersaoWordpressHomologacao = portal.VersaoWordpressHomologacao,
+               Responsavel = portal.Responsavel
+            };
+
+            return (ActionResult)await _generatePdf.GetPdf("View/Portal.cshtml", portalDetalhe);
+        }
+
+        
     }
 }
