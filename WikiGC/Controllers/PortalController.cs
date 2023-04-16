@@ -22,9 +22,18 @@ namespace WikiGC.Controllers
         //[Authorize(Roles = "admin")]
         public async Task<ActionResult<List<Portais>>> ListarPortais()
         {
-           List<Portais> portais = await _portalRepository.GetPortais();
+            try
+            {
+                List<Portais> portais = await _portalRepository.GetPortais();
 
-           return Ok(portais);
+                return Ok(portais);
+            }
+            catch (Exception e)
+            {
+               return BadRequest(e.Message);
+            }
+
+          
         }
 
         [HttpGet("{id}")]

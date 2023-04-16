@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rogerio.campos\\source\\repos\\Wiki\\wi-back-endFR\\wiki-back-end\\WikiGC\\WikiGC.csproj": {}
+    "C:\\Users\\Casa\\source\\repos\\wiki-portais\\wiki-back-end\\WikiGC\\WikiGC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rogerio.campos\\source\\repos\\Wiki\\wi-back-endFR\\wiki-back-end\\WikiGC\\WikiGC.csproj": {
+    "C:\\Users\\Casa\\source\\repos\\wiki-portais\\wiki-back-end\\WikiGC\\WikiGC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rogerio.campos\\source\\repos\\Wiki\\wi-back-endFR\\wiki-back-end\\WikiGC\\WikiGC.csproj",
+        "projectUniqueName": "C:\\Users\\Casa\\source\\repos\\wiki-portais\\wiki-back-end\\WikiGC\\WikiGC.csproj",
         "projectName": "WikiGC",
-        "projectPath": "C:\\Users\\rogerio.campos\\source\\repos\\Wiki\\wi-back-endFR\\wiki-back-end\\WikiGC\\WikiGC.csproj",
-        "packagesPath": "C:\\Users\\rogerio.campos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rogerio.campos\\source\\repos\\Wiki\\wi-back-endFR\\wiki-back-end\\WikiGC\\obj\\",
+        "projectPath": "C:\\Users\\Casa\\source\\repos\\wiki-portais\\wiki-back-end\\WikiGC\\WikiGC.csproj",
+        "packagesPath": "C:\\Users\\Casa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Casa\\source\\repos\\wiki-portais\\wiki-back-end\\WikiGC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rogerio.campos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Casa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -84,6 +83,10 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -112,7 +115,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

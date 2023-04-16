@@ -9,9 +9,13 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WikiGC
 build_property.RootNamespace = WikiGC
-build_property.ProjectDir = C:\Users\rogerio.campos\source\repos\Wiki\wi-back-endFR\wiki-back-end\WikiGC\
+build_property.ProjectDir = C:\Users\Casa\source\repos\wiki-portais\wiki-back-end\WikiGC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\rogerio.campos\source\repos\Wiki\wi-back-endFR\wiki-back-end\WikiGC
+build_property.MSBuildProjectDirectory = C:\Users\Casa\source\repos\wiki-portais\wiki-back-end\WikiGC
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Casa/source/repos/wiki-portais/wiki-back-end/WikiGC/View/Portal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld1xQb3J0YWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

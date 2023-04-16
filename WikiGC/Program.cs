@@ -10,7 +10,10 @@ using Wkhtmltopdf.NetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+string mysqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<DataContext>(options => options.UseMySql(mysqlConnection, ServerVersion.AutoDetect(mysqlConnection)));
+
+//var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 var key = Encoding.ASCII.GetBytes("foolwrwnj&$¨&*sdPa@d");
 builder.Services.AddAuthentication(x =>
     {
@@ -31,7 +34,7 @@ builder.Services.AddAuthentication(x =>
 });
 
 // Add services to the container.
-builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer(connectionString));
+//builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer(connectionString));
 builder.Services.AddTransient<IPortaisRepository, PortaisRepository>();
 
 builder.Services.AddControllers();

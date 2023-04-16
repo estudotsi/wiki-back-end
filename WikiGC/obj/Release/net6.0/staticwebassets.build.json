@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VpRoGW65dC4insBkgtivsJjR6SRA8Va3i46unxPxodc=",
+  "Hash": "Qz7dCJOu8mNiW6Az1Kc6IrR7G3QFhY+KQnsS7orl+qk=",
   "Source": "WikiGC",
   "BasePath": "_content/WikiGC",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WikiGC\\wwwroot",
       "Source": "WikiGC",
-      "ContentRoot": "C:\\Users\\rogerio.campos\\source\\repos\\Wiki\\wi-back-endFR\\wiki-back-end\\WikiGC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Casa\\source\\repos\\wiki-portais\\wiki-back-end\\WikiGC\\wwwroot\\",
       "BasePath": "_content/WikiGC",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\rogerio.campos\\source\\repos\\Wiki\\wi-back-endFR\\wiki-back-end\\WikiGC\\wwwroot\\reports\\portalReport.frx",
+      "Identity": "C:\\Users\\Casa\\source\\repos\\wiki-portais\\wiki-back-end\\WikiGC\\wwwroot\\reports\\portalReport.frx",
       "SourceId": "WikiGC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\rogerio.campos\\source\\repos\\Wiki\\wi-back-endFR\\wiki-back-end\\WikiGC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Casa\\source\\repos\\wiki-portais\\wiki-back-end\\WikiGC\\wwwroot\\",
       "BasePath": "_content/WikiGC",
       "RelativePath": "reports/portalReport.frx",
       "AssetKind": "All",

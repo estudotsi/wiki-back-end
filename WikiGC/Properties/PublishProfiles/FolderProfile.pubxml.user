@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\rogerio.campos\Desktop\wiki-portais-back-end</_PublishTargetUrl>
-    <History>True|2023-04-11T20:03:48.2616950Z;</History>
+    <History>False|2023-04-13T01:51:55.3930477Z;True|2023-04-11T17:03:48.2616950-03:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
